@@ -23,7 +23,7 @@
 						<ul>
 							<li><a href="../video/video.html">公开课</a></li>
 							<li><a href="../infor/infor.html">资料</a></li>
-							<li><a href="#">TOP练习</a></li>
+							<li><a href="../top/top.html">TOP练习</a></li>
 							<li><a href="#">购买</a></li>
 							<li><a href="#">关于我们</a></li>
 						</ul>
@@ -41,16 +41,16 @@
 		<div class="content">
 			<div class="infor-content">
 				<div class="content-lft">
-					<ul>
+					<ul class="list">
 						<li class="active">
 							<h3>练习资料</h3>
-							<p><a href="javascript:;">阅读</a><span>|</span><a href="javascript:;">听力</a><span>|</span><a href="javascript:;">口语</a><span>|</span><a href="javascript:;">写作</a></p>
+							<p><a href="javascript:;" data-type="read">阅读</a><span>|</span><a href="javascript:;" data-type="listen">听力</a><span>|</span><a href="javascript:;" data-type="speak">口语</a><span>|</span><a href="javascript:;" data-type = "writing">写作</a></p>
 						</li>
 						<li>
-							<h4>经验分享</h4>
+							<h4 data-type = "share">经验分享</h4>
 						</li>
 						<li>
-							<h4>机经</h4>
+							<h4 data-type = "machine">机经</h4>
 						</li>
 					</ul>
 				</div>
@@ -130,6 +130,10 @@
 				</div>
 			</div>
 		</div>
+	
+		<!--js-->
+		<script src="../../assets/js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="infor.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 
 </html>

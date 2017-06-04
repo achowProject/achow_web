@@ -8,18 +8,7 @@ $(document).ready(function(e) {
         spaceBetween: 30,
         mousewheelControl: true
     });
-//  var myIndexSwiper = new Swiper('.swiper-container', {
-//		autoplay: 2000, //可选选项，自动滑动
-//		initialSlide: 0,
-//		speed: 400,
-//		autoplayDisableOnInteraction: false,
-//		height: 300,
-//		loop: true,
-//		observer: true,
-//		pagination: '.swiper-pagination',
-//		paginationClickable: true,
-//	});
-	
+
 	//关闭 modal 
 	$(".modal .icon-guanbi").click(function(){
 		$(this).parent().fadeOut(200);
@@ -27,7 +16,7 @@ $(document).ready(function(e) {
 	});
 	
 	//登录
-	$(".btn-entry").click(function(){
+	$("#page1").on("click",".btn-entry",function(){
 		$(".modal").fadeIn(200);
 		$(".modal").find(".register-content").hide();
 		$(".modal").find(".modify-content").hide();
